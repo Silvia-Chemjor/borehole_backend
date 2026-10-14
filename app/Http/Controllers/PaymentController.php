@@ -18,7 +18,7 @@ class PaymentController extends Controller
             $payment = new Payment();
             $payment->record_date = $validated['record_date'];
             $payment->amount = $validated['amount'];
-            $payment->units_used = $validated['narration'];            
+            $payment->narration = $validated['narration'];            
             $payment->plot_id = $validated['plot_id'];
 
             try{
