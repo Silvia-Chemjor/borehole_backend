@@ -13,7 +13,7 @@ class PlotController extends Controller
             'longitude'=>'required|string',
             'latitude'=>'required|string',
             'water_rate'=>'required|numeric',
-            'meter_number'=>'required|string|unique:plots,meter_number',
+            'meter_number'=>'required|string',
             'location_id'=> 'required|integer|exists:locations,id'
         ]);
 
@@ -75,7 +75,7 @@ class PlotController extends Controller
             'longitude'=>'required|string',
             'latitude'=>'required|string',
             'water_rate'=>'required|numeric',
-            'meter_number'=>'required|string|unique:plots,meter_number',
+            'meter_number'=>'required|string',
             'location_id'=> 'required|integer|exists:locations,id'
         ]);
 
